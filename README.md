@@ -31,9 +31,9 @@ SilverLock internally store the original file names and extensions in the newly 
 
 ## Dependencies
 
-SilverLock uses CMake to compile, makes good use of the wonderful [https://github.com/jedisect1/libsodium](libsodium) library to perform actual crypto.
+SilverLock uses CMake to compile, makes good use of the wonderful [libsodium](https://github.com/jedisect1/libsodium) library to perform actual crypto.
 
-SilverLock also comes with its own copy of [https://github.com/CLIUtils/CLI11](CLI11), used to parse command line arguments.
+SilverLock also comes with its own copy of [CLI11](https://github.com/CLIUtils/CLI11), used to parse command line arguments.
 
 ## Details
 
