@@ -1,4 +1,4 @@
-### SilverLock
+# SilverLock
 
 SilverLock is a really, really simple and practical file protector.
 Use it on any file:
@@ -27,7 +27,7 @@ SilverLock internally store the original file names and extensions in the newly 
 
 `silverlock file1.agl file2.agl file3.agl...`
 
-NOTE: After any operation with a file, SilverLock will shred and remove the original file. Use the `-k` or `--keep` option to disable this behaviour.
+**NOTE**: After any operation with a file, SilverLock will shred and remove the original file. Use the `-k` or `--keep` option to disable this behaviour.
 
 ## Dependencies
 
