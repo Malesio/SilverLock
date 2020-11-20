@@ -5,25 +5,25 @@ Use it on any file:
 
 `silverlock myfile.txt`
 
-Hit your password, and done. It's protected.
+Enter your password, and done. It's protected.
 
 Need the contents back?
 
 `silverlock myfile.agl`
 
-Hit your password once again, and poof. Chest open, you're rich.
+Type your password once again, and poof. Chest open, you're rich.
 
 ## Why?
 
-I needed to store some SSH keys remotely, so better protecting them with something only I know. I also took the opportunity to write some basic crypto code and see it work, for what it's worth.
+I needed to store some SSH keys remotely, so better protecting them with something only I know. I also took the opportunity to write some basic crypto code and get it working, for what it's worth.
 
 ## Usage
 
-SilverLock is capable of encrypting several files in a row with the same password. This is perfectly secure, as the underlying key used to actually encrypt the files are different. To encrypt multiple files at once, run:
+SilverLock is capable of encrypting several files at once with the same password. This is perfectly secure, as the underlying key used to actually encrypt the files are different (a random nonce is generated for each file). To encrypt multiple files at once, run:
 
 `silverlock file1 file2 file3...`
 
-SilverLock internally store the original file names and extensions in the newly protected files, named after the original but stripped from their old extension, so SilverLock can replace them with its own extension (.agl). You may also rename them to lessen recognizability by other parties. To decrypt multiple files at once, that you *know* were protected with the **SAME** password, run:
+SilverLock internally store the original file names and extensions in the newly protected files, named after the original but stripped from their old extension, so SilverLock can replace them with its own extension (.agl). You may also rename them to lessen recognizability by third parties. To decrypt multiple files at once, that you *know* were protected with the **SAME** password, run:
 
 `silverlock file1.agl file2.agl file3.agl...`
 
